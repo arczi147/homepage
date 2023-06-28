@@ -1,17 +1,19 @@
-const welcome = () => {
-    console.log("Cześć wszystkim!");
-};
+{
+    const welcome = () => {
+        console.log("Cześć wszystkim!");
+    };
 
-const removeHeader = () => {
-    const naglowek2 = document.querySelector(".naglowek2");
-    naglowek2.remove();
-};
+    const removeHeader = () => {
+        const naglowek2 = document.querySelector(".naglowek2");
+        naglowek2.remove();
+    };
 
-const init = () => {
-    const przycisk = document.querySelector(".przycisk");
-    przycisk.addEventListener("click", removeHeader);
+    const init = () => {
+        const przycisk = document.querySelector(".przycisk");
+        przycisk.addEventListener("click", removeHeader);
 
-    welcome();
-};
+        welcome();
+    };
 
-init();
+    init();
+}
