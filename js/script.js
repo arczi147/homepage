@@ -1,10 +1,17 @@
-console.log("Cześć wszystkim!");
+const welcome = () => {
+    console.log("Cześć wszystkim!");
+};
 
-let przycisk = document.querySelector(".przycisk");
-let naglowek2 = document.querySelector(".naglowek2");
-
-przycisk.addEventListener("click", () => {
+const removeHeader = () => {
+    const naglowek2 = document.querySelector(".naglowek2");
     naglowek2.remove();
-});
+};
 
-console.log(przycisk);
+const init = () => {
+    const przycisk = document.querySelector(".przycisk");
+    przycisk.addEventListener("click", removeHeader);
+
+    welcome();
+};
+
+init();
